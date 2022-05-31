@@ -1,0 +1,45 @@
+<head>
+<meta charset="utf-8">
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+   </head>
+
+
+<script>
+//////////////// AJAX w JS
+
+    function pokaz() {
+    $('#preload').show();
+    
+    $.ajax({
+        type: "GET",
+        url: "pliki.php",
+        
+        success: function(odpowiedz) {
+            $("#odpowiedz").html(odpowiedz);
+        },
+        complete: function() {
+            $("#preload").hide();
+        },
+        error: function() {
+            console.log( "WystÄpiĹ bĹÄd w poĹÄczniu ");
+        }
+    });
+                                          }
+ 
+</script>
+
+<body>
+
+
+<div id="odpowiedz" style="margin-left:300px; border: solid 1px; width: 400px; height: 300px;">
+ Tu bedzie wyswietlony tekst
+</div>
+
+<div id="preload" >
+ <img src='preloader.gif' style="width:100px; height:100px; visibility:hidden; border:solid 1px; ">
+</div>
+<br>
+<input type='submit' value='Pokaz dane z pliku' onclick='pokaz()'>
+<br>
+</body>

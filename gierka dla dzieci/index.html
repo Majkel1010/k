@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gra</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="skryptygra.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylegra.css"> 
+</head>
+<body>
+<input type="button" value="Losuj"	onclick="losuj()" class="pozycjaLosuj">
+<input type="text" id="liczba1" class="polaTekstowe" disabled>
+<input type="text" id="dzialanie" value="+" class="polaTekstowe" style="background-color: skyblue" disabled>
+<input type="text" id="liczba2" class="polaTekstowe" disabled>
+<input type="text" value="=" class="polaTekstowe" style="background-color: skyblue" disabled>
+<input type="text" id="wynik" class="polaTekstowe"  >
+<input type="button" id="sprawdz" value="Sprawdź wynik" onclick="sprawdzenie()" class="pozycjaSprawdz">
+<div id="dziecko" ></div>	
+<div id="komunikat" >Komunikat </div>
+</div>
+</body>
+</html>

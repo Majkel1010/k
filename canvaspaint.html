@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Canvas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		#canvas {
+			
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+<input type="button" value="Zmiana Koloru" id="zmiana">
+<canvas id="canvas">
+
+	
+</canvas>
+<script type="text/javascript">
+	window.addEventListener('load', () => {
+		const canvas = document.querySelector("#canvas");
+		const ctx = canvas.getContext("2d");
+
+
+		
+		canvas.height = window.innerHeight;
+		canvas.width = window.innerWidth;
+		
+		
+
+		let painting = false;
+		let kolorLini = "red";
+
+		function startPosition(e) {
+			painting = true;
+			draw(e);
+		}
+		function finishedPosition() {
+			painting = false;
+			ctx.beginPath();
+		}
+
+		function draw(e){
+			if (!painting) return;
+			ctx.lineWidth = 10;
+			ctx.lineCap = "round";
+
+			ctx.lineTo(e.clientX, e.clientY);
+			ctx.stroke();
+			ctx.beginPath();
+			ctx.moveTo(e.clientX, e.clientY);
+			ctx.strokeStyle = kolorLini;
+
+		}
+
+
+		canvas.addEventListener("mousedown",startPosition);
+		canvas.addEventListener("mouseup", finishedPosition);
+		canvas.addEventListener("mousemove", draw);
+
+		});
+
+	const kolor = document.querySelector("#zmiana");
+	kolor.addEventListener("click", function(){
+		kolorLini = "white";
+		draw(e);
+		console.log(kolorLini);
+
+	})
+</script>
+
+
+
+
+</body>
+</html>

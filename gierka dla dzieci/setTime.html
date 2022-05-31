@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set time</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		let licznik=0;
+		function ukryj() 
+		{
+		licznik++;
+			if(licznik<5)
+			{
+		setTimeout(ukryj,1000);
+			}else
+			{
+		document.getElementById('tekst').style.visibility="hidden";
+			}
+		}
+	</script>
+
+</head>
+<body onload="ukryj()">
+<div id="tekst" style="margin-left: 100px; width: 300px; height: 220px; border: solid 2px; background-color: lightblue" >	
+Napoli na weekendzie Rome w gazie pocisnęła tak więc spokojnie można by postawić na nich jak wyjdzie dobry skład.	</div>
+
+<div></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+cd c:/xampp/mysql/bin/
+mysql -u root
+CREATE DATABASE test1;
+USE test1;
+
+CREATE TABLE samochody(id int auto_increment, marka varchar(30), model varchar(30), rocznik int, pojemnosc float, przyspieszenie, PRIMARY KEY(id));
+
+INSERT INTO samochody VALUES(NULL, "Bugatti", "Veyron", 2018, 7993.0, 2.5);
+
+INSERT INTO samochody VALUES(NULL, "Lamborghini", "Aventador", 2018, 6498.0, 2.9);
+
+SELECT * FROM samochody;

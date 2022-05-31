@@ -1,0 +1,29 @@
+
+.naglowek{
+	font-family: Garamond;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+}
+.main{
+	font-family: Garamond;
+	background-color: lightgrey;
+	float: left;
+	width: 80%;
+	height: 750px;
+}
+.pasek{
+	font-family: Garamond;
+	background-image: url("wypiek.jpg");
+	float: right;
+	width: 20%;
+	height: 750px;
+	opacity: 70%;
+}
+.stopka{
+	font-family: Garamond; 
+	background-color: grey;
+	width: 100%;
+	height: 60px;
+	float: left;
+}

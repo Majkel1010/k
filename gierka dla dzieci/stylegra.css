@@ -1,0 +1,40 @@
+.polaTekstowe
+{
+	width: 90px;
+	height: 70px;
+	background-color: orange;
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.pozycjaLosuj
+{
+	position: absolute;
+	top: 100px;
+
+}
+.pozycjaSprawdz
+{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+#dziecko
+{
+	position: absolute;
+	top: 10px;
+	left: 550px;
+	height: 200px;
+	width: 265px;
+	
+}
+#komunikat
+{
+	position: absolute;
+	top: 200px;
+	left: 550px;
+	height: 100px;
+	width:265px;
+	
+}

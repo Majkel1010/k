@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>	
+	<title>Formularze</title>
+	<meta charset="UTF-8">	
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<h1> Formularz zgłoszeniowy </h1>
+
+	<form action="getdata.php" method="POST">
+		Login: <input type="text" placeholder="Wpisz login" name="mojlogin" class="zmien"> <br>
+		Hasło: <input type="password" placeholder="Wpisz hasło" name="mojehaslo" class="zmien" > <br>
+		
+		Wybierz:<select name="wybor" class="zmien">
+				<option value="stół">	stół		</option>
+				<option value="krzesło"> krzesło	</option>
+				<option value="taboret"> taboret	</option> 
+			</select> <br>
+		
+		<input type="number" placeholder="Liczba" name="liczba1" id="l1" > 
+		Działanie: <select name="działanie">
+				<option value="+">	dodawanie  </option>
+				<option value="-">	odejmowanie	</option>
+				<option value="*">	mnożenie	</option> 
+				<option value="/">	dzielenie	</option> 
+				<option value="pot">potęga		</option> 
+				<option value="pier">pierwiastek	</option> 
+			</select> 
+		<input type="number" placeholder="Liczba" name="liczba2" > <br>
+		
+		<input type="submit" value="Wyślij formularz" >
+	</form>
+</body>
+</html>

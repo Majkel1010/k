@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Klasa JS</title>
+	<script type="text/javascript">
+		class Ludzie
+		{
+			constructor(wiek,wzrost,imie)
+			{
+				this.wiek=wiek;
+				this.wzrost=wzrost;
+				this.imie=imie;
+				alert("Witaj" +this.imie);
+
+			}
+			mojeDane()
+			{
+				console.log(this.imie , this.wzrost);
+			}
+
+
+		}
+	</script>
+</head>
+<body>
+
+<script type="text/javascript">
+	const Marian = new Ludzie(54,1.79,"Marian");
+	
+	Marian.mojeDane();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<h2> Matematyka JavaScript</h2>
+<script>
+var liczba1		= parseInt(prompt("Podaj 1 liczbę"));
+var liczba2		= parseInt(prompt("Podaj 2 liczbę"));
+var dzialanie	= prompt("Podaj typ dzialania");
+
+switch(dzialanie)
+{
+	case "+":
+	wynik = liczba1+liczba2;
+	break;
+	case "-":
+	wynik = liczba1-liczba2;
+	break;
+	case "*":
+	wynik = liczba1*liczba2;
+	break;
+	case "/":
+	wynik = liczba1/liczba2;
+	break;
+	default:
+	alert ("Błąd w wprowadzaniu danych");
+}
+
+alert ("Twój wynik to "+ wynik);
+
+
+
+</script>
+</body>
+<html>

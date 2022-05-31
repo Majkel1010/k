@@ -1,0 +1,99 @@
+#all{
+	font-family: Tahoma;
+	color:white;
+
+}
+#baner1{
+background-color: yellow;
+width: 17%;
+height: 100px; 
+float: left;
+}
+#baner2{
+background-color: blue;
+width: 49%;
+height: 100px; 
+text-align: center;
+float: left;
+}
+#baner3{
+background-color: pink;
+width: 17%;
+height: 100px; 
+float: left;
+}
+#baner4{
+background-color: grey;
+width: 17%;
+height: 100px;
+float: left; 
+}
+
+#lewy{
+	background-color: #FF7F50;
+	width: 80%;
+	height: 700px;
+	
+clear: both;
+float: left;
+
+}
+
+#prawy{
+	background-color: #FF7F50;
+	width: 20%;
+	height: 700px;
+	float: left;
+}
+#stopka{
+	background-color: #983713;
+	text-align: right;
+	height: 400px;
+
+}
+.przyciski{
+	background-color: #D3D3D3;
+	color: #2F2F2F;
+	border: solid 2px;
+	margin: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+.dlaPola{
+	color: orange;
+	
+}
+
+.dlaPolaTxt{
+	width: 140px;
+	height: 60px;
+	font-size: 50px;
+	text-align: center;
+	background-color: orange;
+
+}
+
+.dlaGuzika{
+	background-color: blue;
+	border: solid 3px;
+	border-color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+.ponajechaniu{
+width: 100px;
+height: 60px;
+background-color: green;
+	
+}
+.pozjechaniu{
+	width: 100px;
+	height: 60px;
+	background-color: green;
+		
+	}

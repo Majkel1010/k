@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Własny obiekt</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		const czlowiek = 
+		{
+			wzrost:1.78 ,
+			masa: 80 ,
+			bmi()
+			{
+				let wzrost = parseFloat(this.wzrost);
+				let masa = parseFloat(this.masa);
+			let b = masa/Math.pow(wzrost,2);
+			return b;
+			}
+		}
+	</script>
+</head>
+<body>
+<div id="display" style="margin-left: 200px; font-size: 30px;">
+	Oblicz BMI
+
+</div>
+Masa: <input type="text" id="mass"><br>
+wzrost: <input type="text" id="height">
+<input type="button" id="oblicz" value="Oblicz">
+<script type="text/javascript">
+guzik = document.querySelector("#oblicz");
+guzik.addEventListener("click", function()
+	{
+		czlowiek.masa = document.querySelector()
+		czlowiek.wzrost = document.querySelector()
+
+		let mojeBmi = czlowiek.bmi();
+		document.querySelector("#display").innerHTML=mojeBmi ; 
+	});
+
+</script>
+
+
+</body>
+</html>
